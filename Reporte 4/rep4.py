@@ -40,7 +40,7 @@ class Grafo():
 			print('unset xtics',file=grafica)
 			print('unset ytics',file=grafica)
 			print('unset key',file=grafica)
-			print('plot "nodos.csv" u 1:2 w points pt 7 lc 1, "aristas.csv" u 1:2:($3-$1):($4-$2) w vectors nohead lt 7, "aristasp.csv" u 1:2:($3-$1):($4-$2) w vectors nohead lt 22',file=grafica)
+			print('plot "nodos.csv" u 1:2 w points pt 7 lt 1, "aristas.csv" u 1:2:($3-$1):($4-$2) w vectors nohead lt 7, "aristasp.csv" u 1:2:($3-$1):($4-$2) w vectors nohead lt 22',file=grafica)
 #vamo a conectar
 	def conectar(self,n,k,q):
 		with open('aristas.csv','w') as a:
